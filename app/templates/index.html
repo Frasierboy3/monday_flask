@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chet's Favorite 5 Artists</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+{%block css%}
+<style>
+  body{
+    margin: 50px;
+    background-color: aliceblue;
+  }
+.welcome {
+  text-align: center;
+  color: black;
+}
+.q{
+  text-align: center;
+  margin-top: 50px;
+}
+.fav{
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 50px
+
+}
+</style>
+{% endblock %}
+
+{% block content%}
+<body>
+  <h1 class="welcome">WELCOME!</h1>
+  <p class="q">Would you like to know my favorite artists?</p>
+  <a href="/fav" class="fav">View My Favorite Artists!</a>
+</body>
+
+{% endblock content%}
